@@ -40,13 +40,13 @@ class HomeScreen extends StatelessWidget {
             TextWidget.informationCard("oussama.aroua@orange.com", Icons.email),
             ElevatedButton(
               onPressed: () {
-                print("Pressed");
+                Navigator.pushNamed(context, "/wonder");
               },
               onLongPress: () {
                 print("onLongPress");
               },
               child: Text("let's play a game"),
-            )
+            ),
           ],
         ),
       ),
