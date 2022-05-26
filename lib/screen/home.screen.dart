@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iset_rades_app/routes/main.route.dart';
 import 'package:iset_rades_app/widgets/text/text.widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -40,7 +41,7 @@ class HomeScreen extends StatelessWidget {
             TextWidget.informationCard("oussama.aroua@orange.com", Icons.email),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/wonder");
+                Navigator.pushNamed(context, MainRoutes.wonderRoute);
               },
               onLongPress: () {
                 print("onLongPress");
